@@ -1,0 +1,17 @@
+net: "models/VGG_CNN_M_1024/train_coupled_clusters_loss.prototxt"
+test_iter: 126
+test_interval: 500000
+test_initialization: false
+display: 40
+average_loss: 40
+base_lr: 0.0002
+lr_policy: "step"
+stepsize: 10000
+gamma: 0.7
+max_iter: 10000000
+momentum: 0.9
+weight_decay: 0.0002
+snapshot: 10000
+snapshot_prefix: "weights/VGG_CNN_M_1024/VGG_CNN_M_1024_mid_cid_clf"
+solver_mode: GPU
+clip_gradients: 20
